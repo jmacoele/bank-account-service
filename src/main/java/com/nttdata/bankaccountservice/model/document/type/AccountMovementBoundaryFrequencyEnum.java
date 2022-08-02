@@ -4,8 +4,8 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
- * Account Movement Boundary Frequency Enum
- * 
+ * Account Movement Boundary Frequency Enum.
+ *
  * @author jmacoele
  *
  */
@@ -19,7 +19,13 @@ public enum AccountMovementBoundaryFrequencyEnum {
   public String getValue() {
     return value;
   }
-
+  /**
+   * Function of that convert string into Enum value.
+   *
+   * @param value Enum value string-converted.
+   * @return AccountMovementBoundaryFrequencyEnum.
+   */
+  
   @JsonCreator
   public static AccountMovementBoundaryFrequencyEnum of(
       String value) {

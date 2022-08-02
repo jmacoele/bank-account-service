@@ -3,7 +3,7 @@ package com.nttdata.bankaccountservice.model.document.type;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 /**
- * Account Type Enum
+ * Account Type Enum.
  *
  * @author jmacoele
  *

@@ -1,9 +1,14 @@
 package com.nttdata.bankaccountservice.model.service;
 
 import com.nttdata.bankaccountservice.model.document.Account;
-
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+/**
+ * IAccountService Interface.
+ *
+ * @author jmacoele
+ *
+ */
 
 public interface IAccountService {
 

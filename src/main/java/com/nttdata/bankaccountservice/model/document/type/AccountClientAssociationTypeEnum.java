@@ -3,7 +3,7 @@ package com.nttdata.bankaccountservice.model.document.type;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 /**
- * Account Client Association Type Enum
+ * Account Client Association Type Enum.
  *
  * @author jmacoele
  *
@@ -20,6 +20,12 @@ public enum AccountClientAssociationTypeEnum {
 
   private String value;
 
+  /**
+   * Function of that convert string into Enum.
+   *
+   * @param value Enum value string-converted.
+   * @return AccountClientAssociationTypeEnum.
+   */
   @JsonCreator
   public static AccountClientAssociationTypeEnum of(String value) {
     if (null == value) {

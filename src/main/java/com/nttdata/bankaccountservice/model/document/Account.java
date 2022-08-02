@@ -1,25 +1,27 @@
 package com.nttdata.bankaccountservice.model.document;
 
+import com.nttdata.bankaccountservice.model.document.type.AccountClientAssociationTypeEnum;
+import com.nttdata.bankaccountservice.model.document.type.AccountTypeEnum;
 import java.time.LocalDateTime;
 import java.util.List;
-
 import javax.validation.constraints.NotEmpty;
-
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import com.nttdata.bankaccountservice.model.document.type.AccountClientAssociationTypeEnum;
-import com.nttdata.bankaccountservice.model.document.type.AccountTypeEnum;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+/**
+ * Account Class.
+ *
+ * @author jmacoele
+ *
+ */
 
 @Data
 @ToString
