@@ -18,10 +18,10 @@ import lombok.ToString;
 @Document(value = "accountmovementlimit")
 public class AccountMovementBoundaryType {
 
-	private AccountMovementBoundaryFrequencyEnum accountMovementBoundaryFrequency;
-	
-	private Long movementAmountBoundary;
-	
-	private int dayOfMonth;
-	
+  private AccountMovementBoundaryFrequencyEnum accountMovementBoundaryFrequency;
+
+  private Long movementAmountBoundary;
+
+  private int dayOfMonth;
+
 }

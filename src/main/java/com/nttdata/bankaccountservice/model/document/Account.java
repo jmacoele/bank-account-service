@@ -28,39 +28,39 @@ import lombok.ToString;
 @AllArgsConstructor
 @Document(value = "accounts")
 public class Account {
-	
-	@Id
-	private String id;
-	
-	private String number;
 
-	private AccountTypeEnum accountType;
-	
-	private AccountClientAssociationTypeEnum clientAssociationType;
-	
-	@NotEmpty
-	private List<String> clientIds;
-	
-	private List<String> authorizedSignerIds;
-	
-	private Double maintenanceFee;
-	
-	private AccountMovementBoundaryType accountMovementBoundaryType;
-	
-	private Double countableBalance;
-	
-	private List<AccountTransaction> transactions;
-	
-    @CreatedDate
-    private LocalDateTime createdAt;
+  @Id
+  private String id;
 
-    @LastModifiedDate
-    private LocalDateTime updatedAt;
+  private String number;
 
-    @CreatedBy
-    private String createdBy;
+  private AccountTypeEnum accountType;
 
-    @LastModifiedBy
-    private String updatedBy;
-	
+  private AccountClientAssociationTypeEnum clientAssociationType;
+
+  @NotEmpty
+  private List<String> clientIds;
+
+  private List<String> authorizedSignerIds;
+
+  private Double maintenanceFee;
+
+  private AccountMovementBoundaryType accountMovementBoundaryType;
+
+  private Double countableBalance;
+
+  private List<AccountTransaction> transactions;
+
+  @CreatedDate
+  private LocalDateTime createdAt;
+
+  @LastModifiedDate
+  private LocalDateTime updatedAt;
+
+  @CreatedBy
+  private String createdBy;
+
+  @LastModifiedBy
+  private String updatedBy;
+
 }
